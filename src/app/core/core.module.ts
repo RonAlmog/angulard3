@@ -1,0 +1,9 @@
+import { NgModule, Optional, SkipSelf, ErrorHandler } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
+@NgModule({
+  declarations: [],
+  imports: [CommonModule, HttpClientModule],
+})
+export class CoreModule {}
