@@ -41,8 +41,8 @@ export class MaterialComponent implements OnInit {
     console.log(this.alphabet);
     // 00 box
     const c: Cell = {
-      type: 'Z',
-      text: '',
+      type: 'H',
+      text: '00',
       color: 'grey',
     };
     this.cells[0][0] = c;

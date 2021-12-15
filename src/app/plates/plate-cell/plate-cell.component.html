@@ -1,1 +1,6 @@
-<p>{{ text }}</p>
+<button mat-stroked-button color="primary" *ngIf="type == 'H'">
+  {{ text }}
+</button>
+<button mat-fab color="{{ color }}" *ngIf="type != 'H'">
+  {{ text }}
+</button>
