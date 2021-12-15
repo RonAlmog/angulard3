@@ -92,6 +92,14 @@
         </a>
         <a
           mat-list-item
+          [routerLink]="['/plates/material']"
+          routerLinkActive="active"
+        >
+          <mat-icon mat-list-icon> reorder </mat-icon>
+          <p mat-line>Material</p>
+        </a>
+        <a
+          mat-list-item
           [routerLink]="['/customers']"
           routerLinkActive="active"
         >

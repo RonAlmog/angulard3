@@ -1,0 +1,23 @@
+<h2>Material</h2>
+<section>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="primary">Accent</button>
+    <button mat-raised-button color="primary">Warn</button>
+  </div>
+</section>
+<mat-divider></mat-divider>
+
+<div class="wrapper">
+  <table>
+    <tr *ngFor="let row of rowsIndex">
+      <td *ngFor="let col of colsIndex">
+        <plate-cell
+          [type]="cells[row][col].type"
+          [text]="cells[row][col].text"
+          [color]="cells[row][col].color"
+        ></plate-cell>
+      </td>
+    </tr>
+  </table>
+</div>
